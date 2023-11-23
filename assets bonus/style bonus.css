@@ -1,0 +1,55 @@
+
+body{
+    height: 100vh;
+}
+
+div{
+    position: absolute;
+    height: 100px;
+    background-color: aqua;
+    width: calc(100% - (40px + 40px));
+    left: 40px;
+    animation: ciao 6s linear  infinite;
+}
+
+
+@keyframes ciao {
+    0%{
+        top: 0;
+        background-color: #edb309;
+        width: calc(100% - (40px + 40px));
+        height: 120px;
+    }
+
+    50%{
+        top: 50%;
+        background-color: #ee0094;
+        transform: rotate(180deg);
+        width: calc(100% - (40px + 40px));
+        height: 50px;
+    }
+
+    75%{
+        top: 75%;
+        background-color: #83eded;
+        transform: rotate(180deg);
+        width: 40px;
+        
+    }
+
+    100%{
+        top: 100%;
+        background-color: #83eded;
+        width: calc(100% - (80px + 80px));
+        left: 80px;
+        top: 0;
+    }
+}
+
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/227/763/original/abstract-minimal-flat-geometric-background-vector.jpg);
+    background-size: cover;
+}
+
+
+
